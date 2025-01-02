@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leon am Schlafen</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+    header, footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .donate-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Leon am Schlafen</h2>
+  </header>
+  <main>
+    <h1>Unterstütze Leon</h1>
+    <p>
+      Wenn du Leon beim Schlafen unterstützen möchtest, kannst du hier eine 
+      Spende über PayPal abgeben. Vielen Dank für deine Hilfe!
+    </p>
+    <div class="donate-button">
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_donations" />
+        <input type="hidden" name="business" value="leondundar8@gmail.com" />
+        <input type="hidden" name="item_name" value="Unterstütze Leon" />
+        <input type="hidden" name="currency_code" value="EUR" />
+        <input type="hidden" name="no_recurring" value="0" />
+        <input
+          type="image"
+          src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+          border="0"
+          name="submit"
+          alt="Jetzt spenden über PayPal" />
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Leon am Schlafen</p>
+  </footer>
+</body>
+</html>
